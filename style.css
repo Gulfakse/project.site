@@ -1,0 +1,62 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.home {
+  margin: auto;
+  max-width: var(--content-width);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drop, .ship {
+  list-style: none;
+  padding-left: 85px;
+  display: flex;
+}
+
+.drop, .ship, .line {
+  display: inline-block;
+  margin-right: 2rem;
+  gap: 1rem;
+}
+
+.line a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  padding: 10px;
+  white-space: nowrap;
+  border-radius: 5px;
+  font-size: medium;
+}
+
+.line a:hover {
+  background-color: rgb(11, 21, 115);
+  color: #f9f9f9;
+}
+
+.landing{
+  padding-right: 250px;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.buy{
+  width: 10%;
+  padding: 10px;
+  background-color: rgb(11, 21, 115);
+  color: #ffffff;
+  border: none;
+  display: inline-block;
+  margin-right: 150px;
+}
+
+.buy:hover {
+  background-color: #fb05ff;
+}
+
+.buy:focus {
+  box-shadow: 0 0 5px rgb(7, 230, 234);
+}
