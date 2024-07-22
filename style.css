@@ -61,10 +61,69 @@ body {
   box-shadow: 0 0 5px rgb(7, 230, 234);
 }
 
-#photo1, #photo2{
+/*#photo1, #photo2{
   position: relative;
 }
 #photo2{
   top: -2050px;
-  width: 150px;
+  object-fit: cover;
 }
+.img_wrap{
+  width: 500px;
+  height: 250px;
+}
+.img_wrap {
+  position: relative; 
+  margin-top: 25px;
+}
+
+#photo1, #photo2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#photo1 img{
+  display: block; 
+  width: 100%;
+  height: auto;
+  
+}
+
+#photo2 img {
+ height: auto;
+  display: block;
+  width: 50%;
+  
+}
+#photo2{
+  z-index: 2;
+position: relative;
+right: 250px;
+}*/
+
+.img_wrap {
+  position: relative;
+}
+
+#photo1, #photo2 {
+  position: absolute;
+  top: 0;
+}
+
+#photo1 img, #photo2 img {
+  display: block;
+  width: 100%; /* Ширина изображений на всю ширину родительского контейнера */
+  height: auto; /* Сохранение пропорций изображений */
+}
+
+#photo1 {
+  z-index: 1; /* photo1 должно быть ниже photo2 */
+}
+
+#photo2 {
+  z-index: 2; /* photo2 должно быть поверх photo1 */
+  right: 0; /* Располагаем photo2 по правому краю */
+  width: 50%;
+}
+
