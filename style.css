@@ -60,3 +60,11 @@ body {
 .buy:focus {
   box-shadow: 0 0 5px rgb(7, 230, 234);
 }
+
+#photo1, #photo2{
+  position: relative;
+}
+#photo2{
+  top: -2050px;
+  width: 150px;
+}
