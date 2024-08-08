@@ -1,7 +1,9 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
-
+.main{
+  position: relative;
+}
 .home {
   margin: auto;
   max-width: var(--content-width);
@@ -61,46 +63,40 @@ body {
   box-shadow: 0 0 5px rgb(7, 230, 234);
 }
 
-.img_wrap {
-  position: relative;
-}
-
 #photo1, #photo2 {
   position: absolute;
   top: 0;
-}
-
-#photo1 img, #photo2 img {
-  display: block;
-  width: 100%; /* Ширина изображений на всю ширину родительского контейнера */
-  height: auto; /* Сохранение пропорций изображений */
-  right: 55px;
+  width: 73%;
+  right: 0;
+  z-index: 1;
 }
 
 #photo1 {
-  z-index: 1; /* photo1 должно быть ниже photo2 */
+  /* photo1 должно быть ниже photo2 */
 }
 
 #photo2 {
-  z-index: 2; /* photo2 должно быть поверх photo1 */
-  right: 0; /* Располагаем photo2 по правому краю */
+  
   width: 50%;
+}
+.product{
+  z-index: 2;
+  position: relative;
+  padding-bottom: 250px;
 }
 h1 {
   position: absolute;
  padding-right: 650px;
-  z-index: 10;
   padding-top: 250px; 
   font-size: 50px;
   font-weight: 600;
   padding-left: 180px;
 }
 
-p {
+.content {
  font-size: 20px;
   position: absolute;
   text-align: left;
-  z-index: 10; 
  padding-top: 420px;
  padding-left: 180px;
  padding-right: 700px;
@@ -113,8 +109,7 @@ p {
   border: none;
   margin-left: 180px;
   margin-top: 630px;
-  position: absolute;
-  z-index: 10; 
+
 }
 .learn{
   width: 12%;
@@ -124,6 +119,33 @@ p {
   border-color: black;
   margin-left: 400px;
   margin-top: 630px;
-  position: absolute;
-  z-index: 10; 
+   
+}
+.container{
+
+
+  text-align: left;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+
+}
+.photo{
+  width: 750px;
+ height: auto;
+ padding-left: 50px;
+}
+.content1{
+  padding-top: 20px;
+ padding-left: 100px;
+ padding-right: 100px;
+ padding-bottom: 250px;
+}
+h3{
+  font-weight: 700;
+  font-size: 30px;
+  padding-top: 100px;
+ padding-left: 100px;
+ padding-right: 100px;
+ 
 }
