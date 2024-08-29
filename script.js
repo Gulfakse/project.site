@@ -9,6 +9,11 @@ window.onload = function (){
       image:"images.css/images/undraw_social_influencer_sgsv.png", 
       title:"Light,Fast & Powerful",
        description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim."
+    },
+    {
+      image:"images.css/images/undraw_mention_6k5d.png", 
+      title:"Light,Fast & Powerful",
+       description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim."
     }
       ]
       for (let i = 0; i<features.length; i++){
